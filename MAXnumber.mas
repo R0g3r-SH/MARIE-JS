@@ -1,0 +1,48 @@
+﻿/A01620778 Roger
+ORG 100 
+Load Fir 
+Store Next 
+Load Array 
+Store Max 
+Loop, Clear
+AddI Next 
+Subt Max 
+Skipcond 000 
+Jump NewMax
+NextIdx, Load Next
+Add One 
+Store Next
+Load Count 
+Subt One
+Skipcond 800 
+Jump Print 
+Store Count 
+Jump Loop
+NewMax, Clear 
+AddI Next
+Store Max
+Jump NextIdx
+Print, Load Max
+Output
+Halt / Fin del programa
+
+
+Fir, Hex 11E 
+Next, Hex 0 
+Max, Dec 0
+Count, Hex 10 
+One, Dec 1 
+Array, Dec -1
+
+
+Dec 90
+Dec 70
+Dec 75
+Dec 50
+Dec 100
+Dec 96
+Dec 85
+
+
+
+
